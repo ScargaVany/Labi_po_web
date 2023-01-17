@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Css.css">
+
+    <title>Лабораторная №7</title>
+</head>
+<body>
+    <header>
+        <img src="image/logo.PNG" style="margin-left: 20px;">       
+        <div class="button-link">
+            <a href="#" class="link-use">
+                <span>Войти</span>
+            </a>
+            <a href="#" class="close">Зарегистрироваться</a>
+            <img src="image/person.PNG">
+        </div>
+    </header>
+    <main>
+        <div class="BackgroundModalView">
+            <div class="modalWindeowsView">
+                <div class="headMoadlView">
+                    <span>Вход</span>
+                    <img src="image/Close.png" alt="">
+                </div>
+                <form action="" method="post" class="modaEnterForm">
+                    <label for="logName">Логин *
+                        <input type="text" placeholder="Введите логин (обязательно)" id="logName" required>
+                    </label>
+                    <label for="FirstPassword">Пароль *
+                        <input type="password" id="FirstPassword" placeholder="Введите пароль" required>
+                    </label>
+                    <div class="button">
+                        <button type="submit">Войти</button>
+                        <a href=".">Забыли пароль?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="top_Main">
+            <h1>Последние публикации</h1>
+        </div>
+        <div class="last_publick_list">
+            <div class="list_item">
+                <div class="rowIteam">
+                    <div class="iteam_main">
+                        <img src="image/post-1.png" alt="">
+                        <h3>Работа с Git в Visual Studio Code</h3>
+                        <p>Один из способов работать с Гитом.</p>
+
+                        <div class="rowCat">
+                            <div class="cat_item">Git</div>
+                            <div class="cat_item">Консоль</div>
+                        </div>
+                    </div>
+                    <div class="iteam_main">
+                        <img src="image/post-2.png" alt="">
+                        <h3>Adobe покупают Фигму. Всё пропало?</h3>
+                        <p>Не факт, но есть разные мнения.</p>
+
+                        <div class="rowCat">
+                            <div class="cat_item">Figma</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rowIteam">
+                    <div class="iteam_main">
+                        <img src="image/post-3.png" alt="">
+                        <h3>Все научились программировать. А дальше-то что?</h3>
+                        <p>Ученье — свет.</p>
+
+                        <div class="rowCat">
+                            <div class="cat_item">Обучение</div>
+                            <div class="cat_item">Карьера</div>
+                        </div>
+                    </div>
+                    <div class="iteam_main">
+                        <img src="image/post-4.png" alt="">
+                        <h3>Мне тяжело учиться, кто поможет?</h3>
+                        <p>Попали в патовую ситуацию? Тогда кликайте на статью.</p>
+                        <div class="rowCat">
+                            <div class="cat_item">Обучение</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rowIteam">
+                    <div class="iteam_main">
+                        <img src="image/post-5.png" alt="">
+                        <h3>Ключевые навыки фронтендеров в 2022</h3>
+                        <p>Ежегодное исследование рынка от HTML Academy.</p>
+
+                        <div class="rowCat">
+                            <div class="cat_item">Обучение</div>
+                            <div class="cat_item">Карьера</div>
+                        </div>
+                    </div>
+                    <div class="iteam_main">
+                        <img src="image/post-6.png" alt="">
+                        <h3>Фронтенд-новости</h3>
+                        <p>WAI-ARIA, новинки HTML-форм и 12 ошибок любого джаваскриптера.</p>
+
+                        <div class="rowCat">
+                            <div class="cat_item">Новость</div>
+                        </div>
+                    </div>
+                </div>
+                <button class="btnAdd">Загрузить ещё 6</button>
+            </div>
+            <div class="list_cat">
+                <h2>Рубрики</h2>
+                <ul>
+                    <li><a class="categortys" href="#">Обучение</a></li>
+                    <li><a class="categortys" href="#">Карьера</a></li>
+                    <li><a class="categortys" href="#">Figma</a></li>
+                    <li><a class="categortys" href="#">Консоль</a></li>
+                    <li><a class="categortys" href="#">Git</a></li>
+                    <li><a class="categortys" href="#">Новость</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-main">
+          <div class="footer-main-content">
+            <div class="footer-main-content-nav">
+              <a href="">Об авторе</a>
+              <a href="">Технологии</a>
+            </div>
+            <div class="footer-main-content-label">
+              <label for="">© blog, 2022</label>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/Axios.min.js"></script>
+      <script src="./vue.min.js"></script>    
+      <script src="./main_js.js"></script>
+</body>
+</html>
